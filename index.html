@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Calcular Horas</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <header>
+                <h1 class="text-center">Calcular Horas</h1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+                <div class="col ">
+                    <div class="contenido primario">
+                        <h2 class="text-center">Añade tus horas aqui</h2>
+                            <form id="hora-individual" action="#">
+                                <div class="form-group">
+                                    <label for="individual">Individual:</label>
+                                    <input type="text" class="form-control" id="individual" placeholder="Total horas Individual">
+                                </div>
+                                <div class="form-group">
+                                    <label for="grupal">Grupal:</label>
+                                    <input type="text" class="form-control" id="grupal" placeholder="Total horas grupal">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Agregar</button>
+                            </form>
+
+                    </div> <!--.contenido-->
+                </div> <!--.col-->
+
+                <div class="col">
+                    <div class="contenido secundario">
+
+                        <h2 class="text-center">Horas Calculadas </h2>
+
+                        
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-primary">
+                                <p>Hora Individual: <span id="total-individual"></span> </p>
+                            </div>
+                            <div class="restante alert alert-success">
+                                <p>Hora Grupal: <span id="total-grupal"></span></p>
+                            </div>
+                        </div> <!--.presupuesto-->
+                    </div> <!--.contenido-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
+    </div>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
